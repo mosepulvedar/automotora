@@ -27,6 +27,17 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#con esta configuracion le decimos que una vez el usuario
+#haya sido autenticado de manera correcta sea redirigido
+#a la raiz de mi sitio web
+LOGIN_REDIRECT_URL = "/"
+
+#con esta configuracion le decimos que una vez el usuario
+#haya cerrado sesion será devuelto a la página de login
+LOGOUT_REDIRECT_URL = "/accounts/login"
+
+
+
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 # Application definition

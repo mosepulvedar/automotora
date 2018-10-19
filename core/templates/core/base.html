@@ -35,7 +35,14 @@
            <li>
                <a href="{% url 'logout' %}">Cerrar sesion</a>
            </li>
-          
+           {% else %}
+           
+           <li>
+               <a href="{% url 'login' %}">Login</a>
+           </li>
+           <li>
+               <a href="{% url 'register' %}">Registro</a>
+           </li>
 
            {% endif %}
 
